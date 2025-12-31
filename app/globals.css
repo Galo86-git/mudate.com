@@ -24,3 +24,83 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Layout */
+.container-app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Card base */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Badge verificada */
+.badge {
+  background: #111827;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* Chips servicios */
+.chip {
+  background: #f3f4f6;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* Botón principal */
+.btn-primary {
+  background: #111827;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Fix mobile: evitar solapes */
+@media (max-width: 640px) {
+  .badge {
+    top: 8px !important;
+    left: 8px !important;
+  }
+}
+
+.search-pill {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.search-field {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 12px 14px;
+  outline: none;
+  background: #fff;
+}
+
+.search-field:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 4px rgba(17,24,39,0.08);
+}
+
